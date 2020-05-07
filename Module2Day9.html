@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>My first bootstrap page!</title>
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+@media all and(max-width:500px){
+     .breadcrumb{
+          font-size: 10px;
+     }
+     .breadcrumb li a{
+          padding:10px 0 10px 30px;
+     }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+      #pop{
+        box-shadow:5px 5px 10px 5px #888888;
+        padding-top: 15px;
+      }
+
+      #fav{
+        padding-top: 15px;
+        box-shadow: 7px 5px 10px 2px rgb(71, 73, 201), 10px 7px 10px 3px red, 20px 20px 15px 4px green;
+      }
+
+      #electronic{
+        box-shadow:5px 5px 10px 5px #888888;
+        padding-top: 15px;
+      }
+
+      #classical{
+        box-shadow:5px 5px 10px 5px #888888;
+        padding-top: 15px;
+      }
+footer h5 {
+    font-weight: bolder;
+}
+.header {
+    font-weight: bolder;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NEW!!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">POP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ELECTRONIC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CLASSICAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+    <nav aria-label="breadcrumb">
+        
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">About us</a></li>
+          <li class="breadcrumb-item"><a href="#">NEW!!</a></li>
+          <li class="breadcrumb-item"><a href="#">POP</a></li>
+          <li class="breadcrumb-item"><a href="#">ELECTRONIC</a></li>
+          <li class="breadcrumb-item"><a href="#">CLASSICAL</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+        </ol>
+      </nav>
+      
+    
+    <div class="container">
+      <h1 class="my-4 text-danger" style="font-weight: 600;">
+        Muzika
+      </h1>
+
+      <div class="jumbotron" id="jumbotron">
+        <h1 class="display-4">Hello, Striver!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
+          or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <img class="img-fluid" src="http://placehold.it/750x500" alt="" />
+        </div>
+
+        <div class="col-md-4" id="project">
+          <h3 class="my-3">Project Description</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
+            varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu
+            convallis placerat, felis enim.
+          </p>
+          <h3 class="my-3">Project Details</h3>
+          <ul>
+            <li>Lorem Ipsum</li>
+            <li>Dolor Sit Amet</li>
+            <li>Consectetur</li>
+            <li>Adipiscing Elit</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="my-4">POP</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4" id="pop">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/0af576584c2db758afcbc136d823cacf.1000x1000x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PINK / <br> Missundaztood</h5>
+<!--              <p class="card-text">
+                The songs "Get the Party Started", "Don't Let Me Get Me" and "Just like a Pill" became hits on the Billboard Hot 100.
+              </p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/33ebe51d13b92377e0e5ebc52e625a3e.1000x1000x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">ROBBIE WILLIAMS / Life thru a Lens</h5>
+<!--           <p class="card-text">
+                The fourth single "Angels" which catapulted Williams to international fame as a solo artist.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/06e1a4876abfcdc2c140f5dcb77a219b.999x999x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">WHAM! / Music from the Edge of Heaven </h5>
+<!--              <p class="card-text">
+                The Edge of Heaven is the third and final studio album from British pop duo Wham!
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://theromantic.com/wp-content/uploads/2017/07/Your-Love-The-Outfield.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">The Outfield / <br>  Play Deep</h5>
+<!--              <p class="card-text">
+                The Outfield were an English rock and Are best remembered for their hit single, "Your Love".
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="my-4">FAVOURITE</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4" id="fav">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/0af576584c2db758afcbc136d823cacf.1000x1000x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PINK / <br> Missundaztood</h5>
+<!--              <p class="card-text">
+                The songs "Get the Party Started", "Don't Let Me Get Me" and "Just like a Pill" became hits on the Billboard Hot 100.
+              </p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/33ebe51d13b92377e0e5ebc52e625a3e.1000x1000x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">ROBBIE WILLIAMS / Life thru a Lens</h5>
+<!--           <p class="card-text">
+                The fourth single "Angels" which catapulted Williams to international fame as a solo artist.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/06e1a4876abfcdc2c140f5dcb77a219b.999x999x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">WHAM! / Music from the Edge of Heaven </h5>
+<!--              <p class="card-text">
+                The Edge of Heaven is the third and final studio album from British pop duo Wham!
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://theromantic.com/wp-content/uploads/2017/07/Your-Love-The-Outfield.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">The Outfield / <br>  Play Deep</h5>
+<!--              <p class="card-text">
+                The Outfield were an English rock and Are best remembered for their hit single, "Your Love".
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <h3 class="my-4">ELECTRONIC</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4" id="electronic">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Avicii_-_True_%28Album%29.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">AVICII True</h5>
+<!--              <p class="card-text">
+                The songs "Get the Party Started", "Don't Let Me Get Me" and "Just like a Pill" became hits on the Billboard Hot 100.
+              </p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://yahouston.s3.amazonaws.com/jil9b0v019wx.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">MARTIN GARRIX / Gold Skies</h5>
+<!--           <p class="card-text">
+                The fourth single "Angels" which catapulted Williams to international fame as a solo artist.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/06e1a4876abfcdc2c140f5dcb77a219b.999x999x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">WHAM! / Music from the Edge of Heaven </h5>
+<!--              <p class="card-text">
+                The Edge of Heaven is the third and final studio album from British pop duo Wham!
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://theromantic.com/wp-content/uploads/2017/07/Your-Love-The-Outfield.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">David Guetta / <br>Nothing but the Beat/ <br>  Play Deep</h5>
+<!--              <p class="card-text">
+                The Outfield were an English rock and Are best remembered for their hit single, "Your Love".
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <h3 class="my-4">CLASSICAL</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4" id="classical">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/0af576584c2db758afcbc136d823cacf.1000x1000x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PINK / <br> Missundaztood</h5>
+<!--              <p class="card-text">
+                The songs "Get the Party Started", "Don't Let Me Get Me" and "Just like a Pill" became hits on the Billboard Hot 100.
+              </p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/33ebe51d13b92377e0e5ebc52e625a3e.1000x1000x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">ROBBIE WILLIAMS / Life thru a Lens</h5>
+<!--           <p class="card-text">
+                The fourth single "Angels" which catapulted Williams to international fame as a solo artist.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.genius.com/06e1a4876abfcdc2c140f5dcb77a219b.999x999x1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">WHAM! / Music from the Edge of Heaven </h5>
+<!--              <p class="card-text">
+                The Edge of Heaven is the third and final studio album from British pop duo Wham!
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://theromantic.com/wp-content/uploads/2017/07/Your-Love-The-Outfield.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">The Outfield / <br>  Play Deep</h5>
+<!--              <p class="card-text">
+                The Outfield were an English rock and Are best remembered for their hit single, "Your Love".
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex py-5">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="header" scope="col">Track order</th>
+            <th class="header" scope="col">Title</th>
+            <th class="header" scope="col">Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>M! Ssundaztood <br>
+                <small>by Pink</small></td>
+            <td>3:37</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Don't Let Me Get Me<br>
+                <small>by Pink</small></td>
+            <td>3:31</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Just Like a Pill [Explicit] <br>
+                <small>by Pink</small></td>
+            <td>3:57</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <h5><i class="fa fa-road"></i> GENERAL</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">NEW!!</a></li>
+                                <li><a href="">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5><i class="fa fa-road"></i>COLLECTIONS</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="">POP</a></li>
+                                <li><a href="">ELECTRONIC</a></li>
+                                <li><a href="">CLASSICAL</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-md-right">Contact Us</h5>
+                    <hr>
+                </div>
+                <div class="col-md-5">
+                    <form>
+                        <fieldset class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <a href="#" class="btn btn-primary">Submit</a>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  
+</html>
